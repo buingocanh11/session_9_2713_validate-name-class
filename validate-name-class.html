@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate tên của lớp học</title>
+</head>
+<body>
+<script>
+    function nameClass(str) {
+        reg = /^[ACP][0-9]{4}[GHIKLM]$/;
+        if (reg.test(str)){
+            return true;
+        }
+        return false;
+    }
+    let class1= "C0318G";
+    console.log(nameClass(class1));
+    let class2= "C0iii18G";
+    console.log(nameClass(class2));
+
+</script>
+</body>
+</html>
